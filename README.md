@@ -49,7 +49,7 @@ This project is a hotel management frontend built using **React**, **TypeScript*
 ├── vite.config.ts       # Vite configuration
 └── README.md            # Project documentation
 ```
----
+
 ### Future Improvements
 - **API Integration** (Currently using dummy JSON data)
 - **Authentication System** (OAuth, Firebase Auth, etc.)
