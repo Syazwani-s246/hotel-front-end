@@ -1,54 +1,58 @@
-# React + TypeScript + Vite
+# Hotel Management Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a hotel management frontend built using **React**, **TypeScript**, and **Vite**. It includes a **Login Page** and a **Dashboard Page** to manage hotel bookings.
 
-Currently, two official plugins are available:
+## Features
+- Built with **React + TypeScript + Vite**
+- Displays **dummy JSON booking data** dynamically
+- **Responsive** for both desktop and mobile
+- **Dark mode support**
+- Smooth UI **animations and transitions**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- **React** (Frontend framework)
+- **TypeScript** (Type safety)
+- **Vite** (Fast build tool)
+- **Tailwind CSS** (Styling framework)
+- **ShadCN/UI** (Component library)
 
-## Expanding the ESLint configuration
+## Installation & Setup
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo/hotel-front-end.git
+   cd hotel-front-end
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Run the development server:
+   ```sh
+   npm run dev
+   ```
+4. Open **http://localhost:5173/** in your browser.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Project Structure
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+├── src/
+│   ├── components/      # Reusable UI components
+│   ├── pages/           # Login & Dashboard pages
+│   ├── data/            # Dummy JSON data for bookings
+│   ├── hooks/           # Custom React hooks
+│   ├── styles/          # Tailwind & global styles
+│   ├── App.tsx          # Main entry point
+│   ├── main.tsx         # React root rendering
+│
+├── public/              # Static assets
+├── package.json         # Dependencies & scripts
+├── vite.config.ts       # Vite configuration
+└── README.md            # Project documentation
 ```
+---
+### Future Improvements
+- **API Integration** (Currently using dummy JSON data)
+- **Authentication System** (OAuth, Firebase Auth, etc.)
+
+
+
