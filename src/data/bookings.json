@@ -1,0 +1,38 @@
+[
+  {
+    "id": "BK-123456789",
+    "guestName": "John Smith",
+    "roomNumber": "301",
+    "checkIn": "2023-06-15",
+    "checkOut": "2023-06-18",
+    "status": "checked-in",
+    "guestCount": 2
+  },
+  {
+    "id": "BK-987654321",
+    "guestName": "Emily Johnson",
+    "roomNumber": "205",
+    "checkIn": "2023-06-16",
+    "checkOut": "2023-06-20",
+    "status": "confirmed",
+    "guestCount": 1
+  },
+  {
+    "id": "BK-456789123",
+    "guestName": "Michael Brown",
+    "roomNumber": "412",
+    "checkIn": "2023-06-10",
+    "checkOut": "2023-06-17",
+    "status": "checked-out",
+    "guestCount": 3
+  },
+  {
+    "id": "BK-789123456",
+    "guestName": "Sarah Williams",
+    "roomNumber": "118",
+    "checkIn": "2023-06-18",
+    "checkOut": "2023-06-25",
+    "status": "confirmed",
+    "guestCount": 2
+  }
+]
